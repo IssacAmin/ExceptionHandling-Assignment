@@ -1,0 +1,14 @@
+@echo off
+javac *.java
+javac ./classes/*.java
+java ExceptionHandling.java TestCase.arxml
+echo 1'st case done.
+echo press to test next file.
+pause
+java ExceptionHandling.java EmptyCase.arxml
+echo 2'nd case done.
+echo press to test next file.
+pause
+java ExceptionHandling.java WrongfileCase.arxml
+echo 3'rd case done.
+pause
